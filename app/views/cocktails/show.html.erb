@@ -1,0 +1,7 @@
+<h2><%= @cocktail.name %></h2>
+<p>This is the cocktail page</p>
+<%=@cocktail.doses.each { |x| "#{x.'description'}" }%>
+<%=@cocktail.ingredients.each { |x| "#{x.'name'}" }%>
+
+
+<%=@cocktail.doses.all%>
