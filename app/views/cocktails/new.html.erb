@@ -4,20 +4,20 @@
   <div class="new-cocktail-form">
     <%= form_for(@cocktail) do |f| %>
       <div class="form-camp name-camp">
-      <%= f.label :name %>
+        <%= f.label :name %>
       </div>
       <div class="form-camp">
-      <%= f.text_field :name %>
+        <%= f.text_field :name %>
       </div>
       <div class="form-camp picture-camp">
-      <%= f.label :picture %>
+        <%= f.label :picture %>
       </div>
       <div class="form-camp">
-      <%=f.input :picture_url, as: :file%>
+        <%= f.input :picture_url, as: :file %>
       </div>
       <div class="form-camp">
-      <%= f.submit "Create cocktail", class: "btn btn-danger btnred" %>
+        <%= f.submit "Create cocktail", class: "btn btn-danger btnred" %>
+      </div>
     <% end %>
-      </div>
   </div>
 </div>
