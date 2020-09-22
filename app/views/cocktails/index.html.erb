@@ -4,7 +4,7 @@
   <div class='row'>
       <% @cocktails.each do |cocktail| %>
         <div class='col-3'>
-            <div class='card text-center drink-card'><div class="card-img-top"><img src='8009.jpg' alt='cocktail picture'></div><a class="card-name" href=<%=cocktail_path(cocktail.id)%>><%=cocktail.name%></a></div>
+            <div class='card text-center drink-card'><div class="card-img-top"><img src='../../assets/images/8009.jpg' alt='cocktail picture'></div><a class="card-name" href=<%=cocktail_path(cocktail.id)%>><%=cocktail.name%></a></div>
         </div>
       <% end %>
   </div>
