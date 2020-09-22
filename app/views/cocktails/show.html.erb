@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row">
     <div class="col-4">
-      <%=image_tag '8009.jpg', alt: "Le Wagon", width: 500 %>
+      <%= cl_image_tag @cocktail.photo.key, width: 500, crop: :fill %>
     </div>
     <div class="col-8">
       <h6>Ingredients</h6>

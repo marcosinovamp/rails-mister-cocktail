@@ -13,7 +13,7 @@
       <%= f.label :picture_url %>
       </div>
       <div class="form-camp">
-      <%= f.text_field :picture_url %>
+      <%=f.input :photo, as: :file%>
       </div>
       <div class="form-camp">
       <%= f.submit "Create cocktail", class: "btn btn-danger btnred" %>
