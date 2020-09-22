@@ -3,15 +3,9 @@
 <div class="container">
   <%= simple_form_for(@cocktail) do |f| %>
   <div class="new-cocktail-form">
-    <div class="form-camp name-camp">
-      <%= f.input :name %>
-    </div>
-     <div class="form-camp photo-camp">
-      <%= f.input :photo, as: :file %>
-    </div>
-    <div class="form-camp">
-      <%= f.submit "Create cocktail", class: "btn btn-danger btnred" %>
-    </div>
+    <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
+    <%= f.submit "Create cocktail", class: "btn btn-danger btnred" %>
   </div>
   <% end %>
 </div>
