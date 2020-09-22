@@ -65,6 +65,7 @@ label{
   display:flex;
   flex-direction:column;
   font-size:22px;
+  justify-content:center;
 }
 
 #cocktail_photo{
@@ -88,6 +89,8 @@ label{
   border-radius:5px;
   box-shadow: 2px 2px #660708;
   width:10%;
+  margin-top: 10px;
+  font-size:15px;
 }
 
 .warning-note{
