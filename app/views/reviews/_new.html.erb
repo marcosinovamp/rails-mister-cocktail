@@ -1,0 +1,8 @@
+<h4>Would you like to post a review of our drink?</h4>
+<p class="warning-note">Just don't forget who owns the Club...for your own sake</p>
+<%= simple_form_for [cocktail, review] do |f| %>
+  <%= f.input :note%>
+  <%= f.input :opinion%>
+  <%= f.submit "Condemn Yourself", class: "btn btn-danger redbtn" %>
+<% end %>
+<br>

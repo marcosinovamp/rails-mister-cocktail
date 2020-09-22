@@ -1,7 +1,44 @@
-<h2><%= @cocktail.name %></h2>
-<p>This is the cocktail page</p>
-<%=@cocktail.doses.each { |x| "#{x.'description'}" }%>
-<%=@cocktail.ingredients.each { |x| "#{x.'name'}" }%>
-
-
-<%=@cocktail.doses.all%>
+<h5 class="text-center"><%= @cocktail.name %></h5>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <%=image_tag '8009.jpg', alt: "Le Wagon", width: 500 %>
+    </div>
+    <div class="col-8">
+      <h6>Ingredients</h6>
+      <ul>
+        <%@cocktail.doses.each do |x|%>
+        <li><%="#{x.description} of #{x.ingredient.name}"%>
+          <%= link_to dose_path(x.id), method: :delete, data: { confirm: "Are you sure?" } do %>
+          <i class="fas fa-fire"></i>
+          <% end %>
+        </li>
+          <%end%>
+      </ul>
+      <div class="row justify-content-end">
+        <div class="col-7">
+      <div class= "new-dose-form">
+        <%=render "doses/new", cocktail: @cocktail, dose: Dose.new%>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <h4>Reviews</h4>
+  <br>
+  <div class="row">
+  <%@cocktail.reviews.each do |review|%>
+  <div class="col-3">
+      <h5 class="lost_soul">Lost Soul nº<%=review.id%></h5>
+    <div class="review_card">
+      <p class="note">Note: <%=review.note%><p>
+      <p><%=review.opinion%></p>
+    </div>
+  </div>
+  <%end%>
+</div>
+<div class="new-review-form">
+      <%=render "reviews/new", cocktail: @cocktail, review: Review.new%>
+</div>
+</div>

@@ -10,4 +10,28 @@
 
 // Your CSS partials
 @import "components/index";
-@import "pages/index";
+@import "pages/homepage";
+@import "pages/dose";
+@import "pages/ingredient";
+
+body{
+  background-color:black;
+}
+
+h1{
+  text-shadow: 2px 3px #660708;
+  font-size:40px;
+  font-style:italic;
+  font-family: 'Shadows Into Light', cursive;
+  margin-bottom:0px;
+  color: #f4d58d;
+}
+
+h2{
+  text-shadow: 2px 3px #660708;
+  font-size:20px;
+  margin-top:0px;
+  margin-bottom:30px;
+  font-family: 'Shadows Into Light', cursive;
+  color: #f4d58d;
+}

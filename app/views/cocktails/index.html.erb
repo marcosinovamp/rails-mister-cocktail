@@ -1,6 +1,14 @@
-<h1>List of Cocktails available</h1>
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><a href=<%=cocktail_path(cocktail.id)%>><%=cocktail.name%></a></li>
-  <% end %>
-</ul>
+<div class='container'>
+  <h3 class="text-white text-left" >Take a look at our cocktails,</h3>
+  <h4 style="margin-left:150px;margin-bottom:50px;margin-top:10px">they are worth your soul!</h4>
+  <div class='row'>
+      <% @cocktails.each do |cocktail| %>
+        <div class='col-3'>
+            <div class='card text-center drink-card'><div class="card-img-top"><%=image_tag '8009.jpg', alt: "Le Wagon", width: 250 %></div><a class="card-name" href=<%=cocktail_path(cocktail.id)%>><%=cocktail.name%></a></div>
+        </div>
+      <% end %>
+  </div>
+      <a class="btn btn-danger btnred" href="cocktails/new">Create a drink</a>
+</div>
+<br>
+<br>
