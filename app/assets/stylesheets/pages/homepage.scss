@@ -64,17 +64,16 @@ label{
 .new-cocktail-form{
   display:flex;
   flex-direction:column;
-  justify-content:space-around;
-  font-size:45px;
+  font-size:22px;
 }
 
 #cocktail_photo{
-  width:30%;
+  width:60%;
   float:center;
 }
 
 #cocktail_name{
-  width:30%;
+  width:60%;
   border-radius:5px;
   text-align:center;
   float:center;

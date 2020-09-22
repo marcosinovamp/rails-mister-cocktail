@@ -9,7 +9,7 @@
       <h6>Ingredients</h6>
       <ul>
         <%@cocktail.doses.each do |x|%>
-        <li><%="#{x.description} of #{x.ingredient.name}"%>
+        <li><%="#{x.description} #{x.ingredient.name}"%>
           <%= link_to dose_path(x.id), method: :delete, data: { confirm: "Are you sure?" } do %>
           <i class="fas fa-fire"></i>
           <% end %>
@@ -25,6 +25,7 @@
   </div>
     </div>
   </div>
+  <br>
   <h4>Reviews</h4>
   <br>
   <div class="row">
