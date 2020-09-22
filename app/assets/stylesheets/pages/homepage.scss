@@ -68,6 +68,16 @@ label{
   font-size:45px;
 }
 
+.cocktail_photo{
+  background-color:#a5a58d;
+  border-radius:5px;
+}
+
+.cocktail_name{
+  width:30%;
+  border-radius:5px;
+}
+
 .form-camp{
   text-align:center;
   margin:0px;
@@ -75,12 +85,13 @@ label{
 
 .name-camp{
   text-align:center;
+  margin:auto;
 }
 
 .photo-camp{
   text-align: center;
+  margin:auto;
 }
-
 
 .btnred{
   border-radius:5px;
